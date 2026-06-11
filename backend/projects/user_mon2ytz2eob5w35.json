@@ -1,0 +1,26 @@
+{
+  "my-project": {
+    "files": [
+      {
+        "name": "my-project",
+        "path": "",
+        "type": "folder",
+        "children": [
+          {
+            "name": "main.py",
+            "path": "main.py",
+            "type": "file",
+            "content": "print(\"Hello, World!\")\n"
+          },
+          {
+            "name": "README.md",
+            "path": "README.md",
+            "type": "file",
+            "content": "# My Project\n\nThis is a sample project.\n"
+          }
+        ]
+      }
+    ],
+    "updatedAt": "2026-05-01T15:42:05.424Z"
+  }
+}

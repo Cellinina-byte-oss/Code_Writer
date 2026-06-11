@@ -1,0 +1,245 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: var(--theme-background);
+  transition: all 0.3s ease;
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.theme-select {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: var(--theme-textPrimary);
+  background: var(--theme-backgroundCard);
+  border: 1px solid var(--theme-border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-select:hover {
+  border-color: var(--theme-accent);
+}
+
+.theme-select:focus {
+  outline: none;
+  border-color: var(--theme-accent);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.theme-select option {
+  background: var(--theme-backgroundSecondary);
+  color: var(--theme-textPrimary);
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--theme-textPrimary);
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: var(--theme-textSecondary);
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.welcome-text {
+  font-size: 1rem;
+  color: var(--theme-textSecondary);
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #fff;
+  background: rgba(239, 68, 68, 0.8);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+.auth-links {
+  margin-top: 16px;
+}
+
+.auth-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.mode-cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.mode-card {
+  background: var(--theme-backgroundCard);
+  border: 1px solid var(--theme-border);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 360px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.mode-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--theme-accent);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mode-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.mode-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.ide-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.practice-icon {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+}
+
+.mode-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--theme-textPrimary);
+  margin: 0 0 12px 0;
+}
+
+.mode-description {
+  font-size: 0.95rem;
+  color: var(--theme-textSecondary);
+  margin: 0 0 20px 0;
+}
+
+.mode-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.mode-features li {
+  font-size: 0.9rem;
+  color: var(--theme-textSecondary);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.mode-features li:last-child {
+  border-bottom: none;
+}
+
+.mode-button {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.home-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.home-footer p {
+  font-size: 0.9rem;
+  color: var(--theme-textMuted);
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .mode-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mode-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .theme-switcher {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
